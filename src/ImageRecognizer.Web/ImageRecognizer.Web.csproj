@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\users\oleg\work\temp\challenge2019-master\ImageRecognizer.Web\ImageRecognizer.Web.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\Image-files\demo-image-1.jpeg" />
+    <Content Remove="wwwroot\Image-files\demo-image-2.jpeg" />
+    <Content Remove="wwwroot\Image-files\demo-image-3.jpeg" />
+    <Content Remove="wwwroot\Image-files\demo-image-4.jpeg" />
+    <Content Remove="wwwroot\Image-files\demo-image-5.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.8" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Newtonsoft" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Image-files\demo-image-1.jpeg" />
+    <None Include="wwwroot\Image-files\demo-image-2.jpeg" />
+    <None Include="wwwroot\Image-files\demo-image-3.jpeg" />
+    <None Include="wwwroot\Image-files\demo-image-4.jpeg" />
+    <None Include="wwwroot\Image-files\demo-image-5.jpeg" />
+  </ItemGroup>
+
+
+</Project>

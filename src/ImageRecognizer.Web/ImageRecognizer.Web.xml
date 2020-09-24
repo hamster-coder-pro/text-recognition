@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ImageRecognizer.Web</name>
+    </assembly>
+    <members>
+        <member name="F:ImageRecognizer.Web.Models.RecognitionResultEnum.NotStarted">
+            <summary>
+            The text recognition process has not started.
+            </summary>
+        </member>
+        <member name="F:ImageRecognizer.Web.Models.RecognitionResultEnum.Running">
+            <summary>
+            The text recognition is being processed.
+            </summary>
+        </member>
+        <member name="F:ImageRecognizer.Web.Models.RecognitionResultEnum.Failed">
+            <summary>
+            The text recognition process failed.
+            </summary>
+        </member>
+        <member name="F:ImageRecognizer.Web.Models.RecognitionResultEnum.Succeeded">
+            <summary>
+            The text recognition process succeeded.
+            </summary>
+        </member>
+        <member name="T:ImageRecognizer.Web.Services.ICognitiveServicesApiClient">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ImageRecognizer.Web.Services.ICognitiveServicesApiClient.BatchAnalyzeAsync(System.Byte[])">
+            <summary>
+            
+            </summary>
+            <param name="byteData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImageRecognizer.Web.Services.ICognitiveServicesApiClient.BatchAnalyzeAsync(System.Uri)">
+            <summary>
+            
+            </summary>
+            <param name="imageUri"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImageRecognizer.Web.Services.ICognitiveServicesApiClient.ReadOperationResultAsync(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="resultUrl"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImageRecognizer.Web.Services.ICognitiveServicesApiClient.ReadOperationResultAsync(System.String,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="resultUrl"></param>
+            <param name="tries"></param>
+            <param name="interval"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImageRecognizer.Web.Services.ImageUtilsProvider.GetImageAsByteArray(System.String)">
+            <summary>
+            Returns the contents of the specified file as a byte array.
+            </summary>
+            <param name="imageFilePath">The image file to read.</param>
+            <returns>The byte array of the image data.</returns>
+        </member>
+        <member name="M:ImageRecognizer.Web.Services.ImageUtilsProvider.GetImageAsByteArray(System.IO.Stream)">
+            <summary>
+            Returns the contents of the specified file as a byte array.
+            </summary>
+            <param name="stream"></param>
+            <returns>The byte array of the image data.</returns>
+        </member>
+        <member name="M:ImageRecognizer.Web.Services.ImageUtilsProvider.GetImageAsByteArray(System.IO.BinaryReader,System.Int32)">
+            <summary>
+            Returns the contents of the specified file as a byte array.
+            </summary>
+            <param name="reader"></param>
+            <param name="length"></param>
+            <returns>The byte array of the image data.</returns>
+        </member>
+        <member name="T:ImageRecognizer.Web.Services.IRecognizeTextService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ImageRecognizer.Web.Services.IRecognizeTextService.ExecuteAsync(System.IO.Stream)">
+            <summary>
+            
+            </summary>
+            <param name="stream"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImageRecognizer.Web.Services.IRecognizeTextService.ExecuteAsync(System.Uri)">
+            <summary>
+            
+            </summary>
+            <param name="imageUri"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
